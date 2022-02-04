@@ -1,6 +1,27 @@
 import logo from './logo.svg';
 import './App.css';
+import GeneralInfo from './Components/GenInfo';
+import Education from './Components/EduInfo';
+import Jobs from './Components/JobExp';
+import React from 'react';
 
+
+
+
+class App extends React.Component {
+
+  render() {
+    return(
+      <div>
+        <GeneralInfo/>
+        <Education/>
+        <Jobs/>
+      </div>
+    )
+  }
+}
+
+/*
 function App() {
   return (
     <div className="App">
@@ -18,8 +39,10 @@ function App() {
           Learn React
         </a>
       </header>
+      <generalInfo/>
     </div>
   );
 }
+*/
 
 export default App;
